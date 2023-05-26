@@ -1,7 +1,7 @@
 from .client import OpenAiCLient as client
 
 class OpenAiService:
-    def getChatGptChatCompletion(prompt):
+    def getChatGptChatCompletion(prompt: str):
         completionUrl = 'https://api.openai.com/v1/chat/completions'
         body = {
             'model': 'gpt-3.5-turbo',

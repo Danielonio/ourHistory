@@ -1,1 +1,1 @@
-characterEventsPreprompt = 'Give me a brief summary about the life of ' 
+characterEventsPreprompt: str = 'Give me a brief summary about the life of ' 

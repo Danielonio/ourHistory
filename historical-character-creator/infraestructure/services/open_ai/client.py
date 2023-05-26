@@ -10,7 +10,7 @@ class OpenAiCLient:
       'Authorization': 'Bearer %s' % (api_key)
   }
 
-  def post(url, data ):
-    post_response = requests.post(url, json=data, headers=OpenAiCLient.headers)
+  def post(url, body ):
+    post_response = requests.post(url, json=body, headers=OpenAiCLient.headers)
     post_response_json = post_response.json()
     return post_response_json

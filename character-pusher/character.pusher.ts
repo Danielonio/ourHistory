@@ -1,6 +1,6 @@
 import { Kafka } from "kafkajs";
 
-async function launchCfaracterPusher() {
+async function launchCharacterPusher() {
   const kafka = new Kafka({
     clientId: "my-app",
     brokers: ["localhost:29092"],
@@ -19,4 +19,4 @@ async function launchCfaracterPusher() {
     },
   });
 }
-launchCfaracterPusher();
+launchCharacterPusher();

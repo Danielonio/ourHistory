@@ -1,5 +1,4 @@
 from flask import Flask, request
-from infraestructure.services.open_ai.service import OpenAiService as aiService
 from application.use_cases.get_character_history import GetCaracterHistory 
 
 app = Flask(__name__)

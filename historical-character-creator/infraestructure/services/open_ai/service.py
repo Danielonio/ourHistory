@@ -1,4 +1,4 @@
-from .client import OpenAiCLient as client
+from .client import OpenAiClient as client
 
 class OpenAiService:
     def getChatGptChatCompletion(prompt: str):

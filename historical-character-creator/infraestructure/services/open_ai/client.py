@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-class OpenAiCLient:
+class OpenAiClient:
   load_dotenv() 
   api_key = os.environ.get('OPENAI_API_KEY')
   headers = {
@@ -10,6 +10,6 @@ class OpenAiCLient:
   }
 
   def post(url:str, body:object):
-    postResponse = requests.post(url, json=body, headers=OpenAiCLient.headers)
+    postResponse = requests.post(url, json=body, headers=OpenAiClient.headers)
     postResponseJson = postResponse.json()
     return postResponseJson
